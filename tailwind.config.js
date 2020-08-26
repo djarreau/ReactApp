@@ -7,6 +7,8 @@ module.exports = {
       }
     },
   },
-  variants: {},
+  variants: {
+    gridAutoFlow: ['responsive', 'hover', 'focus']
+  },
   plugins: [],
 }

@@ -16484,6 +16484,38 @@ video {
   grid-auto-flow: column dense;
 }
 
+.hover\:grid-flow-row:hover {
+  grid-auto-flow: row;
+}
+
+.hover\:grid-flow-col:hover {
+  grid-auto-flow: column;
+}
+
+.hover\:grid-flow-row-dense:hover {
+  grid-auto-flow: row dense;
+}
+
+.hover\:grid-flow-col-dense:hover {
+  grid-auto-flow: column dense;
+}
+
+.focus\:grid-flow-row:focus {
+  grid-auto-flow: row;
+}
+
+.focus\:grid-flow-col:focus {
+  grid-auto-flow: column;
+}
+
+.focus\:grid-flow-row-dense:focus {
+  grid-auto-flow: row dense;
+}
+
+.focus\:grid-flow-col-dense:focus {
+  grid-auto-flow: column dense;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -34583,6 +34615,38 @@ video {
     grid-auto-flow: column dense;
   }
 
+  .sm\:hover\:grid-flow-row:hover {
+    grid-auto-flow: row;
+  }
+
+  .sm\:hover\:grid-flow-col:hover {
+    grid-auto-flow: column;
+  }
+
+  .sm\:hover\:grid-flow-row-dense:hover {
+    grid-auto-flow: row dense;
+  }
+
+  .sm\:hover\:grid-flow-col-dense:hover {
+    grid-auto-flow: column dense;
+  }
+
+  .sm\:focus\:grid-flow-row:focus {
+    grid-auto-flow: row;
+  }
+
+  .sm\:focus\:grid-flow-col:focus {
+    grid-auto-flow: column;
+  }
+
+  .sm\:focus\:grid-flow-row-dense:focus {
+    grid-auto-flow: row dense;
+  }
+
+  .sm\:focus\:grid-flow-col-dense:focus {
+    grid-auto-flow: column dense;
+  }
+
   .sm\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -52630,6 +52694,38 @@ video {
   }
 
   .md\:grid-flow-col-dense {
+    grid-auto-flow: column dense;
+  }
+
+  .md\:hover\:grid-flow-row:hover {
+    grid-auto-flow: row;
+  }
+
+  .md\:hover\:grid-flow-col:hover {
+    grid-auto-flow: column;
+  }
+
+  .md\:hover\:grid-flow-row-dense:hover {
+    grid-auto-flow: row dense;
+  }
+
+  .md\:hover\:grid-flow-col-dense:hover {
+    grid-auto-flow: column dense;
+  }
+
+  .md\:focus\:grid-flow-row:focus {
+    grid-auto-flow: row;
+  }
+
+  .md\:focus\:grid-flow-col:focus {
+    grid-auto-flow: column;
+  }
+
+  .md\:focus\:grid-flow-row-dense:focus {
+    grid-auto-flow: row dense;
+  }
+
+  .md\:focus\:grid-flow-col-dense:focus {
     grid-auto-flow: column dense;
   }
 
@@ -70683,6 +70779,38 @@ video {
     grid-auto-flow: column dense;
   }
 
+  .lg\:hover\:grid-flow-row:hover {
+    grid-auto-flow: row;
+  }
+
+  .lg\:hover\:grid-flow-col:hover {
+    grid-auto-flow: column;
+  }
+
+  .lg\:hover\:grid-flow-row-dense:hover {
+    grid-auto-flow: row dense;
+  }
+
+  .lg\:hover\:grid-flow-col-dense:hover {
+    grid-auto-flow: column dense;
+  }
+
+  .lg\:focus\:grid-flow-row:focus {
+    grid-auto-flow: row;
+  }
+
+  .lg\:focus\:grid-flow-col:focus {
+    grid-auto-flow: column;
+  }
+
+  .lg\:focus\:grid-flow-row-dense:focus {
+    grid-auto-flow: row dense;
+  }
+
+  .lg\:focus\:grid-flow-col-dense:focus {
+    grid-auto-flow: column dense;
+  }
+
   .lg\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -88730,6 +88858,38 @@ video {
   }
 
   .xl\:grid-flow-col-dense {
+    grid-auto-flow: column dense;
+  }
+
+  .xl\:hover\:grid-flow-row:hover {
+    grid-auto-flow: row;
+  }
+
+  .xl\:hover\:grid-flow-col:hover {
+    grid-auto-flow: column;
+  }
+
+  .xl\:hover\:grid-flow-row-dense:hover {
+    grid-auto-flow: row dense;
+  }
+
+  .xl\:hover\:grid-flow-col-dense:hover {
+    grid-auto-flow: column dense;
+  }
+
+  .xl\:focus\:grid-flow-row:focus {
+    grid-auto-flow: row;
+  }
+
+  .xl\:focus\:grid-flow-col:focus {
+    grid-auto-flow: column;
+  }
+
+  .xl\:focus\:grid-flow-row-dense:focus {
+    grid-auto-flow: row dense;
+  }
+
+  .xl\:focus\:grid-flow-col-dense:focus {
     grid-auto-flow: column dense;
   }
 
