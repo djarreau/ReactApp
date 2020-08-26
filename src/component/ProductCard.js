@@ -18,45 +18,16 @@ function ProductCard(props) {
                         {props.product.description}
                     </p>
                 </div>
-                <div className="font-bold text-xl flex items-center justify-center">
+                <div className="font-bold text-xl flex p-3 items-center justify-center">
                     ${props.product.price}
                 </div>
+                <div 
+                    to={`/products/${props.product.id}`}
+                    className="bg-blue-500 text-white p-3 flex items-center justify-center w-30">
+                        View
+                </div> 
             </Link> 
         </div>
-
-
-
-        // <div className="border ">
-        //     <div className="h-50 w-full object-contain p-3 flex items-center justify-center">
-        //         <Link to={`/product/${props.product.id}`}>
-        //             <img 
-        //                 src={props.product.image}
-        //                 alt={props.product.title}
-        //             />
-        //         </Link>
-                
-        //     </div>
-        //     <div className="font-bold w-full text-xl flex items-center justify-center p-3">
-        //             {props.product.title}
-        //     </div>
-        //     <div className="flex items center justify-center">
-        //         {props.product.category} 
-        //     </div>
-            
-        /* <div className="  p-3">
-            <div>
-                <div>
-                    {props.product.title}
-                </div>
-                <div className="text-sm w-50">
-                    {props.product.category} 
-                    <p>{props.product.description}</p>
-                </div>
-            {props.product.price}
-        </div>
-            
-        </div> */
-    //  </div>
     )
 }
 
