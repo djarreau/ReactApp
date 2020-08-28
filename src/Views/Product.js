@@ -1,59 +1,41 @@
 import React from 'react'
-import {useParams} from 'react-router-dom'
 import Loader from '../component/Loader'
+import ProductCard from '../component/ProductCard'
 import { useAxiosGet } from '../Hooks/HttpRequests.'
 
-function Product() {
+export default function Product() {
     
-    const {id} = useParams()
-
-    const url = `https://fakestoreapi.com/products/${id}`
+    const url = `https://fakestoreapi.com/products`
     
-    let product = useAxiosGet(url)
+    let products = useAxiosGet(url)
 
     let content = null
-    
-    if(product.error){
-        content = <p>
-            Item not found.
-        </p>
+
+    if(products.error){
+        content = <div>
+            Please try again.
+        </div>
     }
  
-    if(product.loading) {
+    if(products.loading) {
         content = <div>
             <Loader></Loader>
         </div>
     }
 
-   if(product.data){
-       content = 
-        <div className=" pl-10">
-             <h1 className="font-bold text-xl mb-3 flex items-center justify-center p-3">
-                {product.data.title} - ({product.data.category})
-            </h1>
-            <div>
-                <img 
-                    className="h-50 w-50 rounded flex items-center justify-center p-3"
-                    src={product.data.image}
-                    alt={product.data.title}
+    if(products.data){
+        content = products.data.map((product, key) =>
+            <div key={product.id}>
+                <ProductCard 
+                    product={product} 
                 />
             </div>
-            <div className="text-xl font-boldmb-2">
+        )
+    }
+        return (
+            <div>
+                <h1 className="font-bold text-xl p-3">Products</h1>
+                {content}
             </div>
-            <div className="text-sm w-50">
-                {product.data.description}
-            </div>
-            <div className="text-sm w-40">
-                {product.data.price}
-            </div>
-        </div>
-   }
-   
-   return (
-       <div>
-           {content}
-       </div>
-   )
+        )
 }
-
-export default Product

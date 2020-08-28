@@ -12,6 +12,9 @@ import Contact from './Views/Contact'
 import Product from './Views/Product'
 import Users from './Views/Users';
 import UserDetail from './Views/UserDetail';
+import CreateAccount from './Forms/CreateAccount';
+import ProductDetails from './Views/ProductDetails';
+import Registration from './Views/Registration';
 
 function App() {
   return (
@@ -29,14 +32,23 @@ function App() {
         <Route path="/contact">
           <Contact /> 
         </Route>
-        <Route path="/product/:id">
+        <Route path="/product">
           <Product />
+        </Route>
+        <Route path="/product/:id">
+          <ProductDetails />
         </Route>
         <Route path="/users/:id">
           <UserDetail />
         </Route>
         <Route path="/users">
           <Users />
+        </Route>
+        <Route path="/account">
+          <CreateAccount />
+        </Route>
+        <Route path="/registration">
+          <Registration />
         </Route>
       </Switch>
     </div>

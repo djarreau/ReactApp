@@ -4,7 +4,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { useTransition, animated } from 'react-spring'
 import NavigationMenu from './NavigationMenu'
 
-function Navigation() {
+export default function Navigation() {
 
     const [showMenu, setShowMenu] = useState(false)
 
@@ -25,8 +25,10 @@ function Navigation() {
 
 
     return (
+        <div className="flex" >
+        <a className="text-blue-500 pr-3" href="/registration">Sign up</a>
         <nav>
-            <span className="text-xl">
+            <span className="text-xl p-2">
                 <FontAwesomeIcon
                     icon={faBars}
                     onClick={() => setShowMenu(!showMenu)}
@@ -64,7 +66,6 @@ function Navigation() {
                 menu
             }
         </nav>
+        </div>
     )
 }
-
-export default Navigation

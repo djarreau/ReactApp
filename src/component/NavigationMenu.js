@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 
-function NavigationMenu(props) {
+export default function NavigationMenu(props) {
     return (
         <div>
             <div className="font-bold py-3">
@@ -44,16 +44,14 @@ function NavigationMenu(props) {
                         onClick={props.closeMenu}>Users
                     </Link>
                 </li>
-                {/* <li>
+                <li>
                     <Link 
                         className="text-blue-500 py-3 border-b block" 
-                        to="/users/:id"
-                        onClick={props.closeMenu}>User
+                        to="/account"
+                        onClick={props.closeMenu}>Account
                     </Link>
-                </li> */}
+                </li>
             </ul>
         </div>
     )
 }
-
-export default NavigationMenu

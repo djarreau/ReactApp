@@ -3,7 +3,7 @@ import {useParams} from 'react-router-dom'
 import Loader from '../component/Loader'
 import { useAxiosGet } from '../Hooks/HttpRequests.'
 
-function UserDetail() {
+export default function UserDetail() {
     
     const {id} = useParams()
 
@@ -30,22 +30,23 @@ function UserDetail() {
        console.log(user.data)
        content = 
         <div className=" pl-10">
-             <h1 className="font-bold text-xl mb-3 flex items-center justify-center p-3">
-                {user.data.name} - ({user.data.company})
+             <h1 className="font-bold text-xl mb-3 p-2">
+                {user.data.name}
             </h1>
-            <div>
+            {/* <div>
                 <img 
                     className="h-50 w-50 rounded flex items-center justify-center p-3"
                     src={user.data.image}
                     alt={user.data.name}
                 />
+            </div> */}
+            <div className="font-bold text-xl mb-3 p-2">
+                {user.data.company}
             </div>
-            <div className="text-xl font-boldmb-2">
-            </div>
-            <div className="text-sm w-50">
+            <div className="font-bold text-xl mb-3 p-2">
                 {user.data.phone}
             </div>
-            <div className="text-sm w-40">
+            <div className="font-bold text-xl mb-3 p-2">
                 {user.data.email}
             </div>
         </div>
@@ -57,5 +58,3 @@ function UserDetail() {
        </div>
    )
 }
-
-export default UserDetail
